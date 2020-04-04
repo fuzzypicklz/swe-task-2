@@ -26,7 +26,7 @@ To check everything worked well, go to localhost:3000 to check if you see the we
 2. put: `localhost:3000` in the browser and check if you see web app works.
 
 ## Overview
-For this assignment, you will be learning to get familiar with the normal ways of how to use an express app with a frontend view engine.(in this case, embeded javascript)
+For this assignment, we will try to take the cleaness and the structure of our software to a different level by using knex which provides a more organized style of code and much more efficient backend query rendering due to functional programming.
 
 ### Table of Contents
 **[Files to complete](#files-to-complete)**<br>
