@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+
+      function directSignupWithItem(){
+        window.location.href="/signupWithItem";
+      }
+
+      function directSignup(){
+        window.location.href="/signup";
+      }
+
+      function lookupItem(){
+        window.location.href="/lookupUserItem";
+      }
+
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Sign Up With Items" onclick="directSignupWithItem()">
+    <input type="button" value="User Sign Up" onclick="directSignup()">
+    <input type="button" value="User & Item look up" onclick="lookupItem()">
+  </body>
+</html>
