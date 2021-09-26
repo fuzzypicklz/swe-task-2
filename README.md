@@ -65,14 +65,16 @@ Please seek help from me or any course staffs if you are missing any of these fi
 ## Part Two: Configure Mysql
 Look into `knexfile.js` file the mysql connection was already done for you! All you have to do is to fill in the username of your localhost mysql account, the password, and the database your tables are stored in.
 
-The database you will be using this time is `SWE2` same host, and username as before. To check/use the database in datagrip, run:
-`USE SWE2;` in datagrip
+The database you will be using this time is `SWE2` same host, and username as before. 
 
 After you have configured the mysql connection, run the following commands:
 `knex migrate:latest`<br>
 `knex seed:run`<br>
 
-Go to your database select your database, and run the `show tables` command to check if the users and items table are present. 
+Go to your database select your database in datagrip by runing:
+`USE SWE2;`
+
+and run the `show tables` command to check if the users and items table are present. 
 
 ## Part Three: finish writing itemModel.js file
 Before starting with this task, check the links to learn more about knex: 
