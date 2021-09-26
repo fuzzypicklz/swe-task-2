@@ -72,6 +72,10 @@ After you have configured the mysql connection, run the following commands:
 Go to your database select your database, and run the `show tables` command to check if the users and items table are present. 
 
 ## Part Three: finish writing itemModel.js file
+Before starting with this task, check the links to learn more about knex: 
+- https://knexjs.org/
+- https://www.youtube.com/watch?v=wfrn21E2NaU
+
 There are two functions in that javascript file
 ```
 /*
