@@ -6,12 +6,42 @@
     <script>
         function addElements(){
             //TODO your code goes here
+            document.getElementById("form").appendChild(document.createElement("br"));
+            const x = document.createElement("input");
+            x.type = "text";
+            x.name = "name";
 
+            const y = document.createElement("input");
+            y.type = "number";
+            y.name = "quantity";
+            
+            document.getElementById("form").appendChild(x);
+            document.getElementById("form").appendChild(y);
+            console.log("hehehehaw");
+            
+
+            /*
+            let nam = "item"+i.toString();
+            document.getElementById("form").appendChild(document.createElement("br"));
+            const inpu = document.createElement("input");
+            inpu.name=i.toString();
+            inpu.id = nam;
+            inpu.placeholder = nam;
+            const inpuAmnt = document.createElement("input");
+            inpuAmnt.name = i+"amnt";
+            inpuAmnt.id = nam+"amnt";
+            inpuAmnt.type = "number"
+            inpuAmnt.placeholder = nam+" amnt";
+            document.getElementById("form").appendChild(inpu);
+            document.getElementById("form").appendChild(inpuAmnt);
+            console.log("created "+nam+" value");
+            i++;
+            */
         }
     </script>
 </head>
 <body>
-<form method="post" action="/insertUsersWithItems">
+<form id="form" method="post" action="/insertUsersWithItems">
     <input type="text" placeholder="email" name="email" id="email" required>
     <input type="password" placeholder="password" name="password" id="password" required>
 

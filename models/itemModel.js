@@ -6,6 +6,10 @@ const db = require('../database/dbConfig');
  */
 async function findItems(id) {
     //TODO start your code right here
+    const result = await db('items')
+        .where('id', id);
+    return result
+    
 }
 
 /*
@@ -15,6 +19,10 @@ async function findItems(id) {
  */
 async function insertItems(item) {
     //TODO start your code right here
+    const result = await db('items')
+        .insert({ name: item });
+    return result
+
 }
 
 

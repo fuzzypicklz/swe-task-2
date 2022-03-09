@@ -1,12 +1,12 @@
 // Update with your config settings.
 const mysql = require('mysql');
 
-
 const localSQLConnection = {
-  host: 'localhost',
-  user: '',
-  password: '',
-  database: '',
+  host: "pvnet-testing.cjdmtmc8kuwg.us-west-1.rds.amazonaws.com",
+  port: "3306",
+  user: "pvnetuser",
+  password: "CDy21xM8c9NA",
+  database: "SWE2"
 };
 
 // Production database connection

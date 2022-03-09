@@ -21,14 +21,24 @@ router.get('/lookupUserItem', async function(req, res){
 
 router.post('/insertUser', async function(req, res){
   //TODO your code goes here
+    await userModel.insertUser({ email: req.body.email, password: req.body.password});
+
+    res.redirect('/')
 });
 
 router.post('/insertUsersWithItems', async function(req, res){
-  //TODO your code goes here
+    //TODO your code goes here
+    await userModel.insertUsersWithItems(req.body);
+    res.redirect('/')
 });
 
 router.post('/getUserWithItems', async function(req, res){
-  //TODO your code goes here
+    //TODO your code goes here
+    let items = await userModel.findUsersWithItems(req.body.userID);
+    res.json(items);
+    
 });
+
+// how many mistpyed wodrs are there?
 
 module.exports = router;
